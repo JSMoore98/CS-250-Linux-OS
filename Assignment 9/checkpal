@@ -1,0 +1,27 @@
+#!/bin/bash
+
+palCheck () { 
+    check=$1
+    strLen=$((${#check} - 1))
+    result=0
+    for ((j=0; j <= (strLen/2); j++));
+        do if [[ !(${check:strLen-j:1} == ${check:j:1}) ]]; then
+				result=1
+				return;
+			fi
+    done
+    result=0
+}
+
+if [[ !($# -eq 0) ]]
+  then
+	  for pal in $@; 
+		do palCheck $pal
+		shift 
+		if [ $result -eq 0 ]; then
+			echo $pal
+		fi
+		done
+  else  
+    echo Error: No Arguments Given
+fi

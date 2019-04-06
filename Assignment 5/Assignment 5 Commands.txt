@@ -1,0 +1,19 @@
+ls -c | head -5
+grep -v '\-option' file*
+
+grep '4444 Bertram Ave' addresses | tr ':' '\012' > extractedAddress
+NEEDS OUTPUT grep '1234@gmail.com' addresses | sed 's/1234@gmail.com/1234@gmail.com:419-123-9876/'
+NEEDS OUTPUT grep '@gmail.com' addresses | sed 's/@gmail.com/@hotmail.com/'
+
+17. more example
+18.
+19. more example
+20. 
+
+head example
+sed 'N;/^\n$/D;P;D'
+head example
+
+awk '{printf "%s+" ,$0} END {print ""}' myaddr
+
+21. tr 'A-z' 'N-zABCDEFGHIJKLM'

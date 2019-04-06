@@ -1,0 +1,36 @@
+script assignment-4
+cd ./CS-250/Examples
+vi test1 &
+vi test2 &
+vi test3
+i
+==============
+ESC
+CRTL + Z
+jobs
+fg 2
+CTRL + Z
+fg 3
+:x
+fg 2
+:x
+fg 1
+:q
+
+PART TWO
+=========
+head test2
+head test3
+ls -l test*
+!job
+which srot
+^ro ^or
+man !$
+export PATH=$PATH:.
+alias back = "cd ~"
+alias rm = "rm -i"
+cat test2 >> test1
+cat -n test2 > lpr
+rm() { mv $@ ~/Trash; }
+rm test*
+uname -r

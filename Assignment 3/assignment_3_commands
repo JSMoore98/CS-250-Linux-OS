@@ -1,0 +1,17 @@
+script assignment_3
+cd ./CS-250
+cd ./Examples
+echo "This is a one-line file" >
+ls
+head test1
+cat > test2
+This is file two.
+It has several lines.
+Three lines, in fact.
+^D
+ls
+head test2
+sort test2 > test3
+cal > calendar
+ls -l test*
+^D

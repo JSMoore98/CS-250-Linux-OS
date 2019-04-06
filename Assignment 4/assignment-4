@@ -1,0 +1,115 @@
+Script started on 2019-01-24 13:06:39-0500
+]0;jmoore44@CS-Math-ubuntu: ~[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~[00m$ cd ./CS-250/Examples/
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ vi test1 &
+[1] 9696
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ vi test2 &
+[2] 9697
+[1]+  Stopped                 vi test1
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ vi test3
+This is file two.
+It has several lines.
+Three lines, in fact.
+This is file two.
+Three lines, in fact.
+"test3" 3L, 62C[1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [2;1H[24;63H2[2;1H[?25h[?25l[24;53Hi[2;1H[24;53H [2;1H[24;1H[1m-- INSERT --
+[2]-  Stopped                 vi test2
+[3]+  Stopped                 vi test3
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ jobs
+[1]   Stopped                 vi test1
+[2]-  Stopped                 vi test2
+[3]+  Stopped                 vi test3
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ fg 2
+vi test2
+This is file two.
+It has several lines.
+Three lines, in fact.
+?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1HThis is file two.
+It has several lines.
+Three lines, in fact.
+"test2" 3L, 63C[3;22H[?25h[?25l[24;53Hi[3;22H[24;53H [3;22H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H3,22[10CAll[3;22H[?25h[?25l
+[2]+  Stopped                 vi test2
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ fg 3
+vi test3
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[?12h[?12l[27m[23m[29m[m[H[2J[?25l[1;1HIt has several lines.
+This is file two.
+Three lines, in fact.
+=====================                                                                    
+[?25l[?2004l"test3" 4L, 84C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ fg 2
+vi test2
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[?12h[?12l[27m[23m[29m[m[H[2J[?25l[1;1HThis is file two.
+It has several lines.
+Three lines, in fact.
+this is test text.
+[?25l[?2004l"test2" 4L, 82C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ fg 1
+vi test1
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"test1" 1L, 24C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1HThis is a one-line file
+[?25l[?2004l[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ ls -l test*
+-rw-r--r-- 1 jmoore44 jmoore44 24 Jan 24 12:10 test1
+-rw-r--r-- 1 jmoore44 jmoore44 82 Jan 24 13:08 test2
+-rw-r--r-- 1 jmoore44 jmoore44 84 Jan 24 13:08 test3
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ exit
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ head test2
+This is file two.
+It has several lines.
+Three lines, in fact.
+this is test text. 
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ head test3
+It has several lines.
+This is file two.
+Three lines, in fact.
+=====================
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ ls -l test*
+-rw-r--r-- 1 jmoore44 jmoore44 106 Jan 24 13:56 test1
+-rw-r--r-- 1 jmoore44 jmoore44  82 Jan 24 13:08 test2
+-rw-r--r-- 1 jmoore44 jmoore44  84 Jan 24 13:08 test3
+-rw-r--r-- 1 jmoore44 jmoore44   0 Jan 24 14:06 testN
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ !job
+jobs
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ which srot
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ ^ro^or
+which sort
+/usr/bin/sort
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ man !$
+man sort
+[?1049h[22;0;0t[?1h=
+SORT(1)                             User Commands                            SORT(1)[m
+[m
+[1mNAME[0m[m
+       sort - sort lines of text files[m
+[m
+[1mSYNOPSIS[0m[m
+       [1msort[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+       [1msort[0m [[4mOPTION[24m]... [4m--files0-from=F[24m[m
+[m
+[1mDESCRIPTION[0m[m
+       Write sorted concatenation of all FILE(s) to standard output.[m
+[m
+       With no FILE, or when FILE is -, read standard input.[m
+[m
+       Mandatory  arguments  to  long  options  are mandatory for short options too.[m
+       Ordering options:[m
+[m
+       [1m-b[0m, [1m--ignore-leading-blanks[0m[m
+              ignore leading blanks[m
+[m
+       [1m-d[0m, [1m--dictionary-order[0m[m
+              consider only blanks and alphanumeric characters[m
+[m
+       [1m-f[0m, [1m--ignore-case[0m[m
+              fold lower case to upper case characters[m
+[m
+[7m Manual page sort(1) line 1 (press h for help or q to quit)[27m[K
+[K[?1l>[?1049l[23;0;0t]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ export PATH=$PATH:.
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ alias bk="cd ~"
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ alias rm="rm-i"
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ cat test2 >> test1
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ cat -n test2 > lpr
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ rm() { mv $@ ~/Trash; }
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ rm test*
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ uname -r
+4.15.0-43-generic
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ exit
+
+Script done on 2019-01-24 14:19:09-0500

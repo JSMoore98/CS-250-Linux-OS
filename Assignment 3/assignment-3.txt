@@ -1,0 +1,30 @@
+Script started on 2019-01-24 12:09:57-0500
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+]0;jmoore44@CS-Math-ubuntu: ~[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~[00m$ cd ./CS-250
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250[00m$ cd ./Examples
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ echo "This is a one-line file" > test1
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ ls
+test1
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ head test1
+This is a one-line file
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ cat > test2
+This is file two. 
+It has serveral lines.
+Three lines, in fact.
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ ls
+test1  test2
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ head test2
+This is file two.
+It has several lines.
+Three lines, in fact.
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ sort test2 > test3
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ cal > calendar
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ ls -l test*
+-rw-r--r-- 1 jmoore44 jmoore44 24 Jan 24 12:10 test1
+-rw-r--r-- 1 jmoore44 jmoore44 62 Jan 24 12:10 test2
+-rw-r--r-- 1 jmoore44 jmoore44 62 Jan 24 12:11 test3
+]0;jmoore44@CS-Math-ubuntu: ~/CS-250/Examples[01;32mjmoore44@CS-Math-ubuntu[00m:[01;34m~/CS-250/Examples[00m$ exit
+
+Script done on 2019-01-24 12:11:43-0500

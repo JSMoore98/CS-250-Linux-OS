@@ -1,0 +1,68 @@
+Script started on 2019-02-02 18:10:50-0500
+]0;josiah@josiah-VirtualBox: ~[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~[00m$ mkdir Assgmt_5
+]0;josiah@josiah-VirtualBox: ~[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~[00m$ exit
+Script done on 2019-02-02 18:11:09-0500
+Script started on 2019-02-03 09:08:31-0500
+]0;josiah@josiah-VirtualBox: ~[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~[00m$ cd Assgmt_5/
+]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ ls -c | head -5 
+myaddr
+file 10
+example
+file 9
+addresses
+]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ grep -v '\-option' file*
+[35m[Kfile1[m[K[36m[K:[m[Ktest text
+[35m[Kfile10[m[K[36m[K:[m[Ktest text
+[35m[Kfile2[m[K[36m[K:[m[Ktest text
+[35m[Kfile3[m[K[36m[K:[m[Ktest text
+[35m[Kfile4[m[K[36m[K:[m[Ktest text
+[35m[Kfile5[m[K[36m[K:[m[Ktest text
+[35m[Kfile6[m[K[36m[K:[m[Ktest text
+[35m[Kfile7[m[K[36m[K:[m[Ktest text
+[35m[Kfile8[m[K[36m[K:[m[Ktest text
+[35m[Kfile9[m[K[36m[K:[m[Ktest text
+]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ grep '4444 Bertram Ave' addresses | tr ':' 
+ '\012' > extractedAddress
+]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ grep '1234@gmail.com' addresses | sed 's/1 
+234@gmail.com/1234@gmail.com:419-123-9876/' > addresses
+]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ grep '@gmail.com' addresses | sed 's/@gmai 
+l.com/@outlook.com/ > addresses
+> ^C
+]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ grep '@gmail.com' addresses | sed 's/@gmail
+l.com/@outlook.com/' > addresses
+]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ exit
+
+Script done on 2019-02-03 09:12:13-0500
+
+Script started on 2019-02-03 21:45:58-0500
+]0;josiah@josiah-VirtualBox: ~[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~[00m$ cd Assgmt_5/
+]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ more example
+line 1
+
+
+line 2
+line 3
+
+
+
+
+
+
+line 4
+line 5
+line 6
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clearscript assignment_5 -acd[Kexitcd Assgmt_5/head examplemore[C[C[C[C[C[C[C[C[sed 'N;/^\n$/D;P;D' example > example
+]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ more example
+line 1
+
+line 2
+line 3
+
+line 4
+line 5
+line 6
+]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ awk '{printf "%s:" ,$0} END {print ""}"[K' myaddr > addr
+]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ tr 'A-z' 'N-zABCDEFGHIJKLM'
+^[[A    ]0;josiah@josiah-VirtualBox: ~/Assgmt_5[01;32mjosiah@josiah-VirtualBox[00m:[01;34m~/Assgmt_5[00m$ exit
+
+Script done on 2019-02-03 21:51:14-0500

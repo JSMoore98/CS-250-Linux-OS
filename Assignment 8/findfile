@@ -1,0 +1,22 @@
+#!/bin/bash
+
+search=$1
+shift
+
+myFind() 
+{
+if [[ $(find $dir -maxdepth 1 -name $search) ]]; then
+    result=0;
+else
+    result=1;
+fi
+
+}
+
+for dir in $@
+	 do myFind
+		if [ $result -eq 0 ]; then
+			cd $dir
+			break;
+		fi
+done
